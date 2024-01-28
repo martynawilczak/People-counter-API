@@ -16,7 +16,7 @@ class PeopleCounter(Resource):
         img = cv2.imread('images/pap_20230719_1DE.jpg')
         boxes, weights = hog.detectMultiScale(img, winStride=(8, 8))
 
-        return {'counttt': len(boxes)}
+        return {'count': len(boxes)}
 
 
 class HelloWorld(Resource):
